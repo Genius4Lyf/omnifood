@@ -57,3 +57,15 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+/* using CSS GRID for the HERO SECTION */
+.hero {
+  max-width: 130rem; /*Setting the max-width to be 130rem which equals to 1300px*/
+  margin: 0 auto; /*Centering the hero to the center of the viewport */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+  width: 100%;
+}
