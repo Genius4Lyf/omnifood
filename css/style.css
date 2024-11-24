@@ -16,8 +16,8 @@
     Primary: #e67e22
 
     use link to generate tints and shades https://maketintsandshades.com/
-    Tints: 
-    Shades:
+    Tints: #fdf2e9
+    Shades: #cf711f
     Accents:
     Greys: #555, #333
 
@@ -54,10 +54,16 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  /* GOOGLE FONT SETUP */
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900 */
+
+  font-family: "Rubik", sans-serif;
   line-height: 1; /*Reseting the line height to 1 on the page*/
   font-weight: 400;
   color: #555;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .section-hero {
@@ -98,6 +104,7 @@ body {
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+  font-weight: 600;
 
   /* Transition property is always put on the original state */
   transition: background-color 0.3s;
@@ -136,4 +143,39 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important; /**Adding the important declaration */
+}
+
+.delivered-meals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  /* when using a color on a background with another color, use the contract ratio to check if it passes */
+  /* https://coolors.co/contrast-checker/e67e22-fdf2e9 */
+  color: #cf711f;
+  font-weight: 700;
 }
