@@ -26,7 +26,7 @@
     Primary: #e67e22
 
     use link to generate tints and shades https://maketintsandshades.com/
-    Tints: #fdf2e9, #fae5d3
+    Tints: #fdf2e9, #fae5d3, #e67e22
     Shades: #cf711f
     Accents:
     Greys: #555, #333, #6f6f6f (lightest grey allow on this)
@@ -80,6 +80,7 @@ body {
 /* ************************************ */
 /* GENERAL REUSEABLE COMPONENTS */
 /* ************************************ */
+
 .heading-primary {
   /* Referincing the html setting of 1rem = 10px */
   font-size: 5.2rem;
@@ -169,10 +170,6 @@ body {
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
-
-/* .grid:not(:last-child) {
-  margin-bottom: 9.6rem;
-} */
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
