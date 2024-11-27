@@ -476,8 +476,14 @@
 /* CTA SECTION  */
 /* ************************************ */
 
-.section-pricing {
-  padding: 9.6rem;
+.section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* OR */
+
+  /* top / horizontal / left */
+  padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -486,7 +492,6 @@
   background-color: #e67e22;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
   border-radius: 11px;
-  margin-bottom: 9.6rem;
 
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
 
@@ -555,4 +560,82 @@
       outline-offset: 8px; */
   outline: none;
   box-shadow: 0 0 0 0.8rem rgb(253, 242, 233, 0.5);
+}
+
+/* ************************************ */
+/* FOOTER  */
+/* ************************************ */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto; /*setting this margin top auto will set the necessary margin to push the copyright content to the bottom of the page. used by setting flex on the container element .logo-col and setting the flex direction to column*/
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer:active {
+  color: #555;
 }
